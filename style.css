@@ -1,0 +1,115 @@
+/*Estilo Geral*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Reddit Mono", monospace;
+    font-optical-sizing: auto;
+   
+    font-style: normal;
+}
+
+body{
+    background-color: #03001c;
+    height: 100vh;
+}
+
+.flex{
+    display: flex;
+}
+
+.interface{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.rick-contato button{
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: blue;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: .2s;
+}
+.rick-contato button:hover{
+    box-shadow: 0px 0px 8px rgb(0, 0, 255);
+    transform: scale(1.05);
+
+}
+/*Estilo do cabeçalho*/
+header{
+    padding: 40px 4%;
+}
+header > .interface{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header a{
+    color: #707070;
+    text-decoration: none;
+    display: inline-block;
+    transition: .2s;
+}
+
+header a:hover{
+    color: #fff;
+    transform: scale(1.05);
+}
+
+header nav ul{
+    list-style-type: none;
+}
+
+header nav ul li{
+    display: inline-block;
+    padding: 0 40px;
+}
+
+
+
+
+
+/*Estilo do topo do site*/
+
+section.topodosite{
+    padding: 40px 4%;
+}
+
+section.topodosite .flex{
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+}
+.topodosite h1{
+    color: #fff;
+    font-size: 40px;
+    line-height: 40px;
+}
+
+.topodosite .txt-topo-site h1 span{
+    color: rgb(6, 173, 6);
+
+}
+
+.topodosite .txt-topo-site p{
+   color: #fff;
+   margin: 40px 0;
+}
+
+.topodosite .img-topo-site img{
+    position: relative;
+    animation: flutuar 2s ease-in-out infinite alternate;
+}
+@keyframes flutuar{
+    0%{
+        top: 0;
+    }
+    100%{
+        top: 30px;
+    }
+}
+

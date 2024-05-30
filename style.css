@@ -8,7 +8,6 @@
    
     font-style: normal;
 }
-
 body{
     background-color: #03001c;
     height: 100vh;
@@ -21,6 +20,7 @@ body{
 .interface{
     max-width: 1280px;
     margin: 0 auto;
+    
 }
 
 .rick-contato button{
@@ -57,7 +57,9 @@ header > .interface{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    
 }
+
 
 header a{
     color: #707070;
@@ -66,22 +68,80 @@ header a{
     transition: .2s;
 }
 
-header a:hover{
+header nav.menu-desktop a:hover{
     color: #fff;
     transform: scale(1.05);
 }
 
-header .menu-desktop ul{
+header nav ul{
     list-style-type: none;
 }
 
-header .menu-desktop ul li{
+header nav.menu-desktop ul li{
     display: inline-block;
     padding: 0 40px;
 }
 
+/*Estilo menu mobile*/
+.rick-abrir-menu{
+    color: rgb(59, 14, 206);
+    font-size: 40px;
+}
+.overlay-menu-mobile{
+    background-color:#03001c5f;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 8888;
+    display: none;
+}
+
+.menu-mobile{
+    background-color:black;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 0%;
+    z-index: 9999999;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.menu-mobile.abrir-menu{
+    width: 70%;
+}
 
 
+.menu-mobile.abrir-menu ~ .overlay-menu-mobile{
+    display: block;
+}
+
+.menu-mobile nav ul{
+    text-align: right;
+}
+
+.menu-mobile nav ul li a{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 300;
+    padding: 25px 8%;
+    display: block;
+}
+
+.menu-mobile nav ul li a:hover{
+    background-color: #1907b850;
+}
+.menu-mobile .rick-fechar{
+    padding: 20px 4%; 
+}
+
+.menu-mobile .rick-fechar i{
+    color: green;
+    font-size: 30px;
+}
 
 
 /*Estilo do topo do site*/
@@ -399,6 +459,12 @@ section.sobre .flex{
         text-align: center;
 
      }
+ }
+ @media screen and (min-width:1020px) {
+    .rick-abrir-menu{
+        display: none;
+    }
+    
  }
  
  

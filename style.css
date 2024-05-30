@@ -388,7 +388,7 @@ section.sobre .flex{
     color: #fff;
  }
 
- @media screen and (max-width:1020px) {
+ @media screen and (max-width:1000px) {
     /*classe geral*/
     .flex{
         flex-direction: column;
@@ -460,7 +460,7 @@ section.sobre .flex{
 
      }
  }
- @media screen and (min-width:1020px) {
+ @media screen and (min-width:1000px) {
     .rick-abrir-menu{
         display: none;
     }

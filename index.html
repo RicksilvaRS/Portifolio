@@ -12,36 +12,37 @@
       href="https://fonts.googleapis.com/css2?family=Reddit+Mono&display=swap"
       rel="stylesheet"
     />
+  
     <!--google-fonts-fim-->
     <!--bootstrap-icons-->
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
     />
-    />
     <!--bootstrap-icons-fim-->
     <script src="script.js" defer></script>
+    <link rel="icon" type="image/x-icon" href="img/favi.ico">
   </head>
   <body>
-    <header>
-      <div class="interface">
+    <header id="interface">
+      <div class="interface" id="">
         <div class="logo">
-          <a href="#">
+          <a href="#interface">
             <img src="./img/PROGRAMER.png" alt="" />
           </a>
         </div>
         <!--logo-->
         <nav class="menu-desktop">
           <ul>
-            <li><a href="#">Início</a></li>
-            <li><a href="#">Especialidade</a></li>
-            <li><a href="#">Sobre</a></li>
-            <li><a href="#">projetos</a></li>
+            <li><a href="#interface">Início</a></li>
+            <li><a href="#especialidades">Especialidade</a></li>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#portifolio">projetos</a></li>
           </ul>
         </nav>
         
         <div class="rick-contato">
-          <a href="">
+          <a href="#contato">
             <button>Contato</button>
           </a>
         </div><!--contato-->
@@ -55,11 +56,11 @@
           </div><!--rick-fechar-->
           <nav>
             <ul>
-              <li><a href="#">Início</a></li>
-              <li><a href="#">Especialidade</a></li>
-              <li><a href="#">Sobre</a></li>
-              <li><a href="#">projetos</a></li>
-              <li><a href="#">Contato</a></li>
+              <li><a href="#interface">Início</a></li>
+              <li><a href="#especialidades">Especialidade</a></li>
+              <li><a href="#sobre">Sobre</a></li>
+              <li><a href="#portifolio">projetos</a></li>
+              <li><a href="#contato">Contato</a></li>
             </ul>
           </nav>
         </div><!--menu-mobile-->
@@ -69,14 +70,16 @@
       </div> <!--interface-->
     </header>
     <main>
-      <section class="topodosite">
+      <section class="topodosite" id="topodosite">
         <div class="interface">
           <div class="flex">
             <div class="txt-topo-site">
               <h1>
-                <b>TRANSFORMANDO IDEIAS EM REALIDADE DIGITAL<span>.</span></b>
+                <b>Programador Back-end<span>.</span></b>
               </h1>
-              <p>Criatividade e inovação é com Rick</p>
+              <p><b>O que é?</b><br>O back-end é o motor por trás de toda a magia da web. É onde os dados são processados, armazenados e entregues, garantindo que os aplicativos e sites funcionem de forma
+                 eficiente e confiável. É o cérebro invisível que trabalha incansavelmente para fornecer a funcionalidade que os usuários veem e interagem na interface front-end.<br></p>
+              
               <div class="rick-contato">
                 <a href="#">
                   <button>Entre em contato</button>
@@ -93,40 +96,58 @@
         <!--interface-->
       </section>
       <!--topodosite-->
-      <section class="especialidades">
+      <section class="especialidades" id="especialidades">
         <div class="interface">
           <h2 class="titulo">MINHAS <span>ESPECIALIDADES.</span></h2>
           <div class="flex">
+           <!--<h3 class="h3">A</h3>--> 
             <div class="especialidades-box">
               <img src="img/java.png" alt="" />
               <h3>Java</h3>
               <p><ul>
-                <li>2 Anos de trabalho</li>
-                <li>Maior domínio</li>
-                <li>Conhecimento em Spring Boot</li>
+                <li>2 Anos de experiência</li>
+                <li>Desenvolvimento Mobile</li>
+                <li>Spring Boot</li>
                 <li>Swagger</li>
                 <li>Postman</li>
               </ul></p>
             </div>
             <!--especialidades-box-->
-
+          
             <div class="especialidades-box">
               <img src="img/css.png" alt="" />
               <h3>CSS</h3>
-              <p>Projetos desenvolvidos</p>
+              <p><ul>
+                <li>1 ano de experiência</li>
+                <li>Designer UI/UX</li>
+                <li>Tailwind</li>
+                <li>Bulma</li>
+                <li>Vanilla</li>
+              </ul></p>
             </div>
 
             <div class="especialidades-box">
               <img src="img/script-java.png" alt="" />
               <h3>Javascript</h3>
-              <p>Projetos desenvolvidos</p>
+              <p><ul>
+                <li>2 anos de experiência</li>
+                <li>React Native</li>
+                <li>NodeJs e React</li>
+                <li>TypeScript</li>
+              </ul></p>
             </div>
 
             <!--especialidades-box-->
             <div class="especialidades-box">
               <img src="img/html-5.png" alt="" class="html" />
               <h3>HTML 5</h3>
-              <p>Projetos desenvolvidos</p>
+              <p><ul>
+
+                <li>1 Ano de experiência</li>
+                <li>Domínio do BootStrap</li>
+                <li>Domínio do Onsen UI</li>
+                <li>Construção de Portfólios</li>
+              </ul></p>
             </div>
             <!--especialidades-box-->
           </div>
@@ -135,7 +156,7 @@
         <!--interface-->
       </section>
       <!--especialidades-->
-      <section class="sobre">
+      <section class="sobre" id="sobre">
         <div class="interface">
           <div class="flex">
             <div class="img-sobre">
@@ -143,12 +164,19 @@
             </div>
             <div class="txt-sobre">
               <h2>Muito prazer, <span>Sou Rickmy Giliarde.</span></h2>
-              <p>Olá sou Rickmy Giliarde sou programador frontend</p>
-              <p>Olá sou Rickmy Giliarde sou programador frontend</p>
+              <p>Olá, sou Rickmy, um programador Back-end que "vive e respira" programação, formado em
+                 Técnico de Desenvolvimento de Sistemas na ETE Luiz alves Lacerda e Cursando Análise em
+                 Desenvolvimento de Sistemas na UNINASSAU  Boa Viagem.
+              </p>
+              <p>Desde 2022 venho me apaixonando cada vez mais por tecnologia, especialista em Desenvolvimento back-end,
+                aonde eu realizo soluções de problemas com Java, NodeJS, Rust, Python e Go, como Java a linguagem que mais domíno,
+                 junto com Spring e posteman. Além do mais, trabalho com Desenvolvimento Web na UpWork de forma freelancer. Me sinto
+                 preparado para agregar num ambiente organizacional, no qual vou integrar minhas habilidades HardSkills e SoftSkills.
+              </p>
               <div class="rick-social">
-                <a href=""><button><i class="bi bi-instagram"></i></button></a>
-                <a href=""><button><i class="bi bi-linkedin"></i></button></a>
-                <a href=""><button><i class="bi bi-github"></i></button></a>
+                <a href="https://www.instagram.com/ricckyz_/"><button><i class="bi bi-instagram"></i></button></a>
+                <a href="https://www.linkedin.com/in/rickmy-giliarde-06554427a/"><button><i class="bi bi-linkedin"></i></button></a>
+                <a href="https://github.com/RicksilvaRS"><button><i class="bi bi-github"></i></button></a>
               </div>
             </div>
           </div>
@@ -158,7 +186,7 @@
       </section>
       <!--sobre-->
 
-    <section class="portifolio">
+    <section class="portifolio" id="portifolio">
       <div class="interface">
         <h2 class="titulo">MEU <span>PORTFÓLIO</span></h2>
         <div class="flex">
@@ -176,15 +204,15 @@
 
     </section><!--portifolio-->
     
-    <section class="formulario">
+    <section class="formulario" id="contato">
       <div class="interface">
         <h2 class="titulo">FALE <span>COMIGO</span></h2>
 
-        <form action="">
-          <input type="text" name="" id="" placeholder="Seu nome completo:" required>
-          <input type="text" name="" id="" placeholder="Seu e-mail:" required>
-          <input type="text" name="" id="" placeholder="Seu Celular:">
-          <textarea name="" id="" placeholder="Sua mensagem:" required></textarea>
+        <form method="post" action="envia.php">
+          <input type="text" name="nome" id="" placeholder="Seu nome completo:" required>
+          <input type="text" name="email" id="" placeholder="Seu e-mail:" required>
+          <input type="text" name="celular" id="" placeholder="Seu Celular:">
+          <textarea name="mensagem" id="mensagem" placeholder="Sua mensagem:" required></textarea>
           <div class="rick-enviar"><input type="submit" value="Enviar"></div>
         </form>
       </div><!--interface-->
@@ -195,12 +223,12 @@
       <div class="inteface">
         <div class="line-footer borda"> <div class="flex">
             <div class="logo-footer">
-              <img src="img/PROGRAMER.png" alt="">
+             <a href="#interface"> <img src="img/PROGRAMER.png" alt=""></a>
             </div><!--logo-footer-->
             <div class="rick-social">
-              <a href=""><button><i class="bi bi-instagram"></i></button></a>
-              <a href=""><button><i class="bi bi-linkedin"></i></button></a>
-              <a href=""><button><i class="bi bi-github"></i></button></a>
+              <a href="https://www.instagram.com/ricckyz_/"><button><i class="bi bi-instagram"></i></button></a>
+              <a href="https://www.linkedin.com/in/rickmy-giliarde-06554427a/"><button><i class="bi bi-linkedin"></i></button></a>
+              <a href="https://github.com/RicksilvaRS"><button><i class="bi bi-github"></i></button></a>
             </div>
             </div>
         </div><!--line-footer1-->
@@ -211,6 +239,7 @@
         </div><!--line-footer2-->
 
       </div><!--interface-->
+      <p class="copy">&copy; Rickmy Silva - Todos os direitos reservados</p>
     </footer>
   </body>
 </html>

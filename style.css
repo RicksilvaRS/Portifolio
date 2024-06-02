@@ -51,7 +51,7 @@ button:hover, form .rick-enviar input:hover{
 }
 /*Estilo do cabeçalho*/
 header{
-    padding: 40px 4%;
+    padding: 20px 4%;
 }
 header > .interface{
     display: flex;
@@ -80,6 +80,14 @@ header nav ul{
 header nav.menu-desktop ul li{
     display: inline-block;
     padding: 0 40px;
+
+}
+
+footer p.copy{
+    color: rgba(255, 255, 255, 0.25);
+    padding: 0px 4%;
+    text-align: center;
+    font-style: normal;
 }
 
 /*Estilo menu mobile*/
@@ -200,6 +208,12 @@ section.especialidades .especialidades-box{
     border-radius: 20px;
     transition: .2s;
 }
+/* section.especialidades .h3{
+    padding: 5px;
+    color: #fff;
+    margin-top: 200px;
+    
+} */
 
 section.especialidades .especialidades-box:hover{
    transform: scale(1.05);

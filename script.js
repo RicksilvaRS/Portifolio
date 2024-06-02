@@ -13,3 +13,8 @@ menu.addEventListener("click", () => {
 overlay.addEventListener("click", () => {
   menu.classList.remove("abrir-menu");
 });
+
+let prom = document.getElementById("rick-enviar");
+prom.addEventListener("click", () => {
+  prom.classList.add(window.prompt("rick"));
+});

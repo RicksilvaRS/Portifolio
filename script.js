@@ -14,7 +14,9 @@ overlay.addEventListener("click", () => {
   menu.classList.remove("abrir-menu");
 });
 
-let prom = document.getElementById("rick-enviar");
-prom.addEventListener("click", () => {
-  prom.classList.add(window.prompt("rick"));
-});
+document
+  .getElementById("rick-enviar")
+  .addEventListener("submit", function (event) {
+    event.preventDefault();
+    alert("enviado!");
+  });
